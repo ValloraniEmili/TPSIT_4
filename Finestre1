@@ -1,0 +1,34 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package finestre1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author studente1
+ */
+public class Finestre1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic hereFinestra f1;
+       
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Quante finestre vuoi creare?");
+        int numero = input.nextInt();
+       
+        Finestra f1;
+        do{
+        f1 = new Finestra();
+        f1.setVisible(true);
+        numero=numero-1;
+        }while(numero>0);
+        
+      }
+}
